@@ -1,0 +1,29 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "rewrites": [
+      {
+        "source": "/game/**",
+        "destination": "/game.html"
+      },
+      {
+        "source": "/new-game/**",
+        "destination": "/new-game.html"
+      },
+      {
+        "source": "/join-game/**",
+        "destination": "/join-game.html"
+      }
+    ],
+    "cleanUrls": true,
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

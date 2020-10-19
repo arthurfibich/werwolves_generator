@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <h1>Werwolf</h1>
+
+        <div class="content">
+            <h4>Spieler</h4>
+            <label for="add-user-form">Spieler hinzufügen</label>
+            <form id="add-user-form">
+                <input type="text" name="name" placeholder="Name">
+                <button type="submit">hinzufügen</button>
+            </form>
+            <ol id="users-list"></ol>
+
+            <h4>Anzahlen</h4>
+            <form id="settings-form">
+                <input type="number" step="1" name="werewolve" value="3">
+                <label for="werewolve">Werwölfe</label><br>
+                <input type="number" step="1" name="townie" value="0">
+                <label for="townie">Dorfbewohner (Townies)</label><br>
+                <input type="number" step="1" name="doctor" value="0">
+                <label for="doctor">Arzt</label><br>
+                <input type="number" step="1" name="life-guard" value="0">
+                <label for="life-guard">Leibwächter</label><br>
+                <input type="number" step="1" name="strong-dude" value="0">
+                <label for="strong-dude">Harte Burschen</label><br>
+                <input type="number" step="1" name="gunman" value="0">
+                <label for="gunman">Schützen</label><br>
+                <input type="number" step="1" name="prison-guard" value="0">
+                <label for="prison-guard">Gefängniswärter</label><br>
+                <input type="number" step="1" name="priest" value="0">
+                <label for="priest">Priester</label><br>
+                <input type="number" step="1" name="seer" value="0">
+                <label for="seer">Seher</label><br>
+                <input type="number" step="1" name="aura-seer" value="0">
+                <label for="aura-seer">Auraseher</label><br>
+                <input type="number" step="1" name="seer-novice" value="0">
+                <label for="seer-novice">Seherlehrlinge</label><br>
+                <input type="number" step="1" name="detective" value="0">
+                <label for="detective">Detektive</label><br>
+                <input type="number" step="1" name="medium" value="0">
+                <label for="medium">Mediums/Media/wieauchimmers</label><br>
+                <input type="number" step="1" name="witch" value="0">
+                <label for="witch">Hexen</label><br>
+                <input type="number" step="1" name="avenger" value="0">
+                <label for="avenger">Rächer</label><br>
+                <input type="number" step="1" name="pacifist" value="0">
+                <label for="pacifist">Pazifisten</label><br>
+                <input type="number" step="1" name="amor" value="0">
+                <label for="amor">Amors</label><br>
+                <input type="number" step="1" name="wicked-townie" value="0">
+                <label for="wicked-townie">verfluchte Townies</label><br>
+                <button type="submit" value="submit" name="submit">Spiel ab!</button>
+            </form>
+        </div>
+        
+        <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+        <script src="/__/firebase/init.js"></script>
+        <script src="/new_game.js"></script>
+    </body>
+</html>
